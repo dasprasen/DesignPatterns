@@ -10,18 +10,21 @@ public class BreakSingleton {
         SingletonLazy instance1 = SingletonLazy.getInstance();
         SingletonLazy instance2 = null;
 
+        SingletonEnum singletonEnum = SingletonEnum.INSTANCE;
+        SingletonEnum singletonEnum1 = null;
+
         try {
-            Constructor[] constructors = SingletonLazy.class.getDeclaredConstructors();
+            Constructor[] constructors = SingletonEnum.class.getDeclaredConstructors();
             for(Constructor constructor : constructors) {
                 constructor.setAccessible(true);
-                instance2 = (SingletonLazy) constructor.newInstance();
+                singletonEnum1 = (SingletonEnum) constructor.newInstance();
                 break;
             }
         } catch (Exception e) {
             e.printStackTrace();
         }
-        System.out.println(instance1.hashCode());
-        System.out.println(instance2.hashCode());
+        System.out.println(singletonEnum.hashCode());
+        System.out.println(singletonEnum1.hashCode());
 
     }
 }

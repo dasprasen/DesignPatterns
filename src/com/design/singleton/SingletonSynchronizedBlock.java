@@ -32,6 +32,6 @@ public class SingletonSynchronizedBlock extends SuperClass {
     @Override
     protected Object clone() throws CloneNotSupportedException
     {
-        throw new CloneNotSupportedException();
+        throw new CloneNotSupportedException("Cloning a singleton object");
     }
 }

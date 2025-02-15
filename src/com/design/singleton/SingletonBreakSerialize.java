@@ -10,7 +10,7 @@ public class SingletonBreakSerialize {
         try {
             SingletonLazy instance1 = SingletonLazy.getInstance();
             ObjectOutput out = new ObjectOutputStream(new FileOutputStream("file.text"));
-            out.writeObject(instance1);;
+            out.writeObject(instance1);
             out.close();
 
             ObjectInput in = new ObjectInputStream(new FileInputStream("file.text"));

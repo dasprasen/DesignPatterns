@@ -8,5 +8,8 @@ public class Main {
         Utility utility = new Utility();
         Producer producer = new Producer(utility);
         Consumer consumer = new Consumer(utility);
+
+        producer.run();
+        consumer.run();
     }
 }

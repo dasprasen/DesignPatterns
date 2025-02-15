@@ -1,4 +1,4 @@
-package com.design.strategy;
+package com.design.strategy_pattern_arithmetic_operation;
 
 /**
  * @author Prasenjit Kumar Das

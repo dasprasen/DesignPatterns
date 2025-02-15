@@ -12,7 +12,7 @@ public class SubstractNumbers implements Chain {
 
     @Override
     public void calculate(Numbers request) {
-        if(request.getCalculationNeeded() == "sum") {
+        if(request.getCalculationNeeded() == "sub") {
             System.out.println(request.getNum1() + " - " + request.getNum2() + " = " + (request.getNum1()-request.getNum2()));
         } else {
             nextInChain.calculate(request);
