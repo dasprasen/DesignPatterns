@@ -1,0 +1,6 @@
+PaymentGateway -> Core class managing clients, banks and payment processing
+Client -> Represent merchants like flipkart, amazon
+Bank
+PaymentMethod -> different payment methods like UPI, Credit card, net banking
+Router -> route transactions to appropriate banks based on rules
+Transaction -> payment transaction with its details

@@ -1,0 +1,17 @@
+Design Split wise:
+
+Requirements:
+1. Do we need to support different types of expense splits (equal, exact, percentage) ?
+2. Should we handle group expense as well as individual expense ?
+3. Do we need to support multiple currencies ?
+4. Should we implement features like simplify debt or just track who owes whom ?
+5. Is persistence required or just in-memory operations ?
+
+
+Based on typical expectations, focus on:
+
+1. User registration and management
+2. Creating groups
+3. Adding expenses (equal split for simplicity)
+4. Tracking balances
+5. Settling up between users
